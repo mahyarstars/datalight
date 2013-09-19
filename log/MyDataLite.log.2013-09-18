@@ -1,0 +1,655 @@
+2013-09-18 17:43:14,719 [http-bio-8080-exec-6] ERROR errors.GrailsExceptionResolver  - GrailsTagException occurred when processing request: [GET] /MyDataLite/wizard/selectCategories/24
+Attribute value must be quoted (name="categories" value="alone" checked=false").. Stacktrace follows:
+java.lang.RuntimeException: Error initializing GroovyPageView
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.codehaus.groovy.grails.web.taglib.exceptions.GrailsTagException: Attribute value must be quoted (name="categories" value="alone" checked=false").
+	... 5 more
+2013-09-18 17:45:33,134 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - saveCategories()...saving: 
+2013-09-18 17:45:33,143 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - 	category: marital
+2013-09-18 17:45:33,197 [http-bio-8080-exec-3] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [POST] /MyDataLite/wizard/saveCategories - parameters:
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+_categories: 
+recid: 24
+next: Next
+categories: marital
+categories: mobility
+categories: mortgage
+No such property: concept for class: com.acn.mydata.WizardController. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: concept for class: com.acn.mydata.WizardController
+	at com.acn.mydata.WizardController$_saveCategories_closure9.doCall(WizardController.groovy:99)
+	at com.acn.mydata.WizardController.saveCategories(WizardController.groovy:97)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 17:47:33,280 [http-bio-8080-exec-1] DEBUG mydata.WizardController  - saveCategories()...saving: 
+2013-09-18 17:47:33,283 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: marital
+2013-09-18 17:47:33,292 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: mobility
+2013-09-18 17:47:33,292 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: mortgage
+2013-09-18 17:47:50,175 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - saveConcept()...saving: 
+2013-09-18 17:47:50,183 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - 	saveConcept conceptId: B21005.
+2013-09-18 17:47:50,183 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - 	saveConcept conceptId: B16003.
+2013-09-18 17:47:50,210 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - createVariable()
+2013-09-18 17:47:50,298 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8154
+2013-09-18 17:47:50,298 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8155
+2013-09-18 17:47:50,298 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8156
+2013-09-18 17:47:50,298 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8157
+2013-09-18 17:47:50,298 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8158
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8159
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8160
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8161
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8162
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8163
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8164
+2013-09-18 17:47:50,299 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8165
+2013-09-18 17:47:50,339 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13189
+2013-09-18 17:47:50,339 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13190
+2013-09-18 17:47:50,339 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13191
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13192
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13193
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13194
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13195
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13196
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13197
+2013-09-18 17:47:50,340 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13198
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13199
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13200
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13201
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13202
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13203
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13204
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13205
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13206
+2013-09-18 17:47:50,341 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13207
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13208
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13209
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13210
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13211
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13212
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13213
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13214
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13215
+2013-09-18 17:47:50,342 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13216
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13217
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13218
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13219
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13220
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13221
+2013-09-18 17:47:50,343 [http-bio-8080-exec-8] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13222
+2013-09-18 17:51:09,885 [http-bio-8080-exec-2] ERROR errors.GrailsExceptionResolver  - NullPointerException occurred when processing request: [GET] /MyDataLite/wizard/saveCategories
+Stacktrace follows:
+java.lang.NullPointerException
+	at com.acn.mydata.WizardController$$EOHqDx8I.saveCategories(WizardController.groovy:87)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 17:51:20,065 [http-bio-8080-exec-6] ERROR errors.GrailsExceptionResolver  - NullPointerException occurred when processing request: [GET] /MyDataLite/wizard/saveCategories
+Stacktrace follows:
+java.lang.NullPointerException
+	at com.acn.mydata.WizardController$$EOHqDx8I.saveCategories(WizardController.groovy:87)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 17:51:49,213 [http-bio-8080-exec-10] DEBUG mydata.WizardController  - saveCategories()...saving: 
+2013-09-18 17:52:05,630 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - saveConcept()...saving: 
+2013-09-18 17:52:05,631 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - 	saveConcept conceptId: B16007.
+2013-09-18 17:52:05,631 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - 	saveConcept conceptId: B21005.
+2013-09-18 17:52:05,631 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - 	saveConcept conceptId: B19037.
+2013-09-18 17:52:05,631 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - 	saveConcept conceptId: B19037B.
+2013-09-18 17:52:05,701 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - createVariable()
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10818
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10819
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10820
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10821
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10822
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10823
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10824
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10825
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10826
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10827
+2013-09-18 17:52:05,753 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10828
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10829
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10830
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10831
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10832
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10833
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10834
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10835
+2013-09-18 17:52:05,754 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10836
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10837
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10838
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10839
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10840
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10841
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10842
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10843
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10844
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10845
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10846
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10847
+2013-09-18 17:52:05,755 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10848
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10849
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10850
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10851
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10852
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10853
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10854
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10855
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10856
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10857
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10858
+2013-09-18 17:52:05,756 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10859
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10860
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10861
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10862
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10863
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10864
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10865
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10866
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10867
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10868
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10869
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10870
+2013-09-18 17:52:05,757 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10871
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10872
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10873
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10874
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10875
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10876
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10877
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10878
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10879
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10880
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10881
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10882
+2013-09-18 17:52:05,758 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10883
+2013-09-18 17:52:05,759 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10884
+2013-09-18 17:52:05,759 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10885
+2013-09-18 17:52:05,759 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10886
+2013-09-18 17:52:05,784 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8385
+2013-09-18 17:52:05,784 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8386
+2013-09-18 17:52:05,784 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8387
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8388
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8389
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8390
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8391
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8392
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8393
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8394
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8395
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8396
+2013-09-18 17:52:05,785 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8397
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8398
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8399
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8400
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8401
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8402
+2013-09-18 17:52:05,786 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 8403
+2013-09-18 17:52:05,838 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10680
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10681
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10682
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10683
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10684
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10685
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10686
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10687
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10688
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10689
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10690
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10691
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10692
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10693
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10694
+2013-09-18 17:52:05,839 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10695
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10696
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10697
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10698
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10699
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10700
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10701
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10702
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10703
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10704
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10705
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10706
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10707
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10708
+2013-09-18 17:52:05,840 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10709
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10710
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10711
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10712
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10713
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10714
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10715
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10716
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10717
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10718
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10719
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10720
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10721
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10722
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10723
+2013-09-18 17:52:05,841 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10724
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10725
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10726
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10727
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10728
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10729
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10730
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10731
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10732
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10733
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10734
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10735
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10736
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10737
+2013-09-18 17:52:05,842 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10738
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10739
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10740
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10741
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10742
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10743
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10744
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10745
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10746
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10747
+2013-09-18 17:52:05,843 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 10748
+2013-09-18 17:52:05,874 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13189
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13190
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13191
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13192
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13193
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13194
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13195
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13196
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13197
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13198
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13199
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13200
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13201
+2013-09-18 17:52:05,875 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13202
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13203
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13204
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13205
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13206
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13207
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13208
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13209
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13210
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13211
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13212
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13213
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13214
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13215
+2013-09-18 17:52:05,876 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13216
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13217
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13218
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13219
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13220
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13221
+2013-09-18 17:52:05,877 [http-bio-8080-exec-3] DEBUG mydata.WizardController  - concept: com.acn.mydata.Concept : 13222
+2013-09-18 18:01:20,800 [http-bio-8080-exec-1] DEBUG mydata.WizardController  - saveCategories()...saving: 
+2013-09-18 18:01:20,800 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: imputation
+2013-09-18 18:01:20,800 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: income
+2013-09-18 18:01:20,800 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: marital
+2013-09-18 18:01:20,801 [http-bio-8080-exec-1] INFO  mydata.WizardController  - 	category: mobility
+2013-09-18 18:30:25,714 [http-bio-8080-exec-3] ERROR errors.GrailsExceptionResolver  - MissingMethodException occurred when processing request: [GET] /MyDataLite/wizard/getConceptByCategory
+No signature of method: com.acn.mydata.WizardService.getConceptByCategory() is applicable for argument types: () values: []
+Possible solutions: getConceptByCategory(java.lang.String, com.acn.mydata.DataSource). Stacktrace follows:
+groovy.lang.MissingMethodException: No signature of method: com.acn.mydata.WizardService.getConceptByCategory() is applicable for argument types: () values: []
+Possible solutions: getConceptByCategory(java.lang.String, com.acn.mydata.DataSource)
+	at com.acn.mydata.WizardController$_closure6.doCall(WizardController.groovy:482)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 18:31:21,403 [http-bio-8080-exec-5] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [GET] /MyDataLite/wizard/getConceptByCategory
+No such property: ds for class: grails.orm.HibernateCriteriaBuilder. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: ds for class: grails.orm.HibernateCriteriaBuilder
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2.doCall(WizardService.groovy:47)
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1817)
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1518)
+	at com.acn.mydata.WizardService$$EOHqP5Hg.getConceptByCategory(WizardService.groovy:42)
+	at com.acn.mydata.WizardController$_closure6$$EOHqP9TF.doCall(WizardController.groovy:482)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 18:31:31,906 [http-bio-8080-exec-10] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [GET] /MyDataLite/wizard/getConceptByCategory
+No such property: ds for class: grails.orm.HibernateCriteriaBuilder. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: ds for class: grails.orm.HibernateCriteriaBuilder
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2.doCall(WizardService.groovy:47)
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1817)
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1518)
+	at com.acn.mydata.WizardService$$EOHqP5Hg.getConceptByCategory(WizardService.groovy:42)
+	at com.acn.mydata.WizardController$_closure6$$EOHqP9TF.doCall(WizardController.groovy:482)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 18:46:11,555 [Thread-12] ERROR compiler.GrailsProjectWatcher  - Compilation Error: startup failed:
+C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy: 44: The current scope already contains a variable of the name conceptIDList
+ @ line 44, column 7.
+   		def conceptIDList = c.list{
+         ^
+
+1 error
+
+2013-09-18 18:46:42,896 [Thread-12] ERROR compiler.GrailsProjectWatcher  - Compilation Error: startup failed:
+C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy: 45: The current scope already contains a variable of the name conceptIDList
+ @ line 45, column 7.
+   		def conceptIDList = c.list{
+         ^
+
+1 error
+
+2013-09-18 18:47:43,396 [FileSystemWatcher: files=#426 cl=java.net.URLClassLoader@1f635484] ERROR plugins.AbstractGrailsPluginManager  - Plugin [services:2.1.1] could not reload changes to file [C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy]: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: java.lang.NullPointerException
+	... 1 more
+2013-09-18 18:48:37,736 [http-bio-8080-exec-7] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [GET] /MyDataLite/wizard/getConceptByCategory
+No such property: query for class: grails.orm.HibernateCriteriaBuilder. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: query for class: grails.orm.HibernateCriteriaBuilder
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2_closure5$$EOHqTHzW.doCall(WizardService.groovy:51)
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1817)
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1518)
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2$$EOHqTHzW.doCall(WizardService.groovy:46)
+	at com.acn.mydata.WizardService$$EOHqTHzU.getConceptByCategory(WizardService.groovy:42)
+	at com.acn.mydata.WizardController$_closure6$$EOHqTScp.doCall(WizardController.groovy:487)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 18:48:48,161 [http-bio-8080-exec-4] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [GET] /MyDataLite/wizard/getConceptByCategory
+No such property: query for class: grails.orm.HibernateCriteriaBuilder. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: query for class: grails.orm.HibernateCriteriaBuilder
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2_closure5$$EOHqTHzW.doCall(WizardService.groovy:51)
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1817)
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1518)
+	at com.acn.mydata.WizardService$_getConceptByCategory_closure2$$EOHqTHzW.doCall(WizardService.groovy:46)
+	at com.acn.mydata.WizardService$$EOHqTHzU.getConceptByCategory(WizardService.groovy:42)
+	at com.acn.mydata.WizardController$_closure6$$EOHqTScp.doCall(WizardController.groovy:487)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-09-18 18:48:48,670 [FileSystemWatcher: files=#427 cl=java.net.URLClassLoader@1f635484] ERROR plugins.AbstractGrailsPluginManager  - Plugin [services:2.1.1] could not reload changes to file [C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy]: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: java.lang.NullPointerException
+	... 1 more
+2013-09-18 18:48:54,760 [http-bio-8080-exec-7] ERROR [/MyDataLite].[default]  - Servlet.service() for servlet [default] in context with path [/MyDataLite] threw exception
+java.lang.RuntimeException: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:298)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:200)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:151)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter$1.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: java.lang.NullPointerException
+	... 1 more
+2013-09-18 18:48:56,402 [http-bio-8080-exec-3] ERROR [/MyDataLite].[default]  - Servlet.service() for servlet [default] in context with path [/MyDataLite] threw exception
+java.lang.RuntimeException: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:298)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:200)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:151)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter$1.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: java.lang.NullPointerException
+	... 1 more
+2013-09-18 18:49:23,285 [http-bio-8080-exec-5] ERROR [/MyDataLite].[default]  - Servlet.service() for servlet [default] in context with path [/MyDataLite] threw exception
+java.lang.RuntimeException: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:298)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:200)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:151)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter$1.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.RuntimeException: Unable to locate constructor with Class parameter for class org.codehaus.groovy.grails.commons.DefaultGrailsServiceClass
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: java.lang.NullPointerException
+	... 1 more
+2013-09-18 18:56:58,626 [Thread-11] ERROR compiler.GrailsProjectWatcher  - Compilation Error: startup failed:
+C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy: 54: unexpected token: } @ line 54, column 3.
+   		})
+     ^
+
+1 error
+
+2013-09-18 18:57:01,938 [Thread-11] ERROR compiler.GrailsProjectWatcher  - Compilation Error: startup failed:
+C:\Accenture\CensusWorkspace\MyDataLite\grails-app\services\com\acn\mydata\WizardService.groovy: 54: unexpected token: } @ line 54, column 3.
+   		})
+     ^
+
+1 error
+
