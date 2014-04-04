@@ -70,6 +70,9 @@ class WizardService {
 				log.debug("Requesting URL: " + url + " " + paramStr)
 				
 				def output = requestURL(url, paramStr)
+				log.debug("requestURL returns: "+output)
+				if (output == null || output.length() ==0)
+					return;
 				def o = JSON.parse(output)
 				
 				// add the entry
@@ -94,7 +97,8 @@ class WizardService {
 			rec.states.each { state ->
 				String paramStr = "key=${key}&get=${var.variableId},NAME&for=state:${state.fipsCode}"
 				def output = requestURL(url, paramStr)
-				
+				if (output == null || output.length() ==0)
+					return;
 				def o = JSON.parse(output)
 				
 				o.each{ data ->
@@ -116,6 +120,8 @@ class WizardService {
 			rec.counties.each { county ->
 				String paramStr = "key=${key}&get=${var.variableId},NAME&for=county:${county.fipsCode}&in=state:${county.stateFipsCode}"
 				def output = requestURL(url, paramStr)
+				if (output == null || output.length() ==0)
+					return;
 				def o = JSON.parse(output)
 				
 				o.each{ data ->
