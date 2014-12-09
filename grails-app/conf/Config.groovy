@@ -169,5 +169,5 @@ grails.plugins.springsecurity.interceptUrlMap = [
 ]
 
 // Admin users
-admin.users.list = ['sogden','czinner','jlarche','rnahas']
+admin.users.list = ['sogden','czinner','jlarche','rnahas','jgatti', 'lesmonde', 'apinheiro', 'jbrubaker', 'edemonte']
 
